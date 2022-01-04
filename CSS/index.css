@@ -1,0 +1,50 @@
+@keyframes circle {
+    0% {
+        background-position: 100%;
+    }
+    100% {
+        background-position: -1%;
+    }
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    padding: 200px;
+    background: no-repeat url(../img/background.jpg);
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.main {
+    margin: 0 auto;
+    padding: 30px;
+    background-color: black;
+    text-align: center;
+}
+
+.main .tit-main {
+    font-size: 4rem;
+    background-color: bisque;
+    padding: 20px 0;
+}
+
+.main #login-form {
+    background: url(../img/cart.png);
+    background-size: 100px;
+    transition: 1s;
+    padding: 45px 0;
+    animation-timing-function: cubic-bezier(1,.2,.6,.9);
+}
+.main #login-form:hover {
+    animation: circle infinite 4s;
+}
+
+img {
+    width: 400px;
+}
+
+.hidden {
+    display : none;
+}
