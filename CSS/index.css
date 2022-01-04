@@ -14,7 +14,6 @@ html {
 }
 
 body {
-    /* padding: 20% 10%; */
     background: no-repeat url(../img/background.jpg);
     font-family: 'Alfa Slab One', cursive;
 }
@@ -78,10 +77,6 @@ body {
     line-height: 3rem;
     vertical-align: bottom;
     margin-left: 4px;
-}
-
-img {
-    width: 400px;
 }
 
 /* 미디어쿼리 */
