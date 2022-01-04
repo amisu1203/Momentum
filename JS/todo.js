@@ -5,7 +5,6 @@ const todoList = document.getElementById('todo-list');
 const TODOS_KEY = 'todos';
 let toDos = [];
 
-
 function saveTodos() {
     localStorage.setItem(TODOS_KEY, JSON.stringify(toDos));
 }
