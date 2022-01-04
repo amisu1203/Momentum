@@ -1,11 +1,87 @@
-.hidden {
-    display: none;
+/* 기본 설정 */
+html {
+    font-size: 10px;
 }
 
 body {
+    /* padding: 20% 10%; */
     background: no-repeat url(../img/background.jpg);
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.main {
+    position: relative;
 }
 
 img {
     width: 400px;
+    display: none;
+}
+
+/* 가방 */
+.bag {
+    padding: 100px 0 50px;
+    background: no-repeat center url(../img/bag.png);
+    background-size: 800px;
+    text-align: center;
+}
+
+.bag .tit-bag {
+    font-size: 4.5rem;
+    padding: 20px 0 10px;
+    margin-bottom: 20px;
+    color: #f2f2f2;
+    letter-spacing: .1em;
+    text-shadow: 0 -1px 0 rgb(193, 193, 193), 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 22px 30px rgba(0, 0, 0, 0.9), 2px 2px 2px rgba(206, 89, 55, 0);
+}
+
+.bag #todo-form input {
+    outline: none;
+    border-radius: 40px;
+    border: none;
+    opacity: 80%;
+    padding: 5px;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    background: rgb(213, 213, 213);
+    transition: .4s;
+}
+
+.bag #todo-form input:hover {
+    opacity: 100%;
+    transform: scale(1.2);
+}
+
+.bag #todo-list {
+    height: 400px;
+    margin: 0 auto;
+}
+
+/* 시계 */
+#clock {
+    position: absolute;
+    right: 100px;
+    top: 50px;
+    font-size: 3rem;
+    color: #b7b7b7;
+    /* background: #bababa; */
+    text-shadow: #e0e0e0 1px 1px 0;
+}
+
+/* 광고 */
+#ad {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    font-family: 'Gowun Batang', serif;
+    line-height: 32px;
+}
+#ad .brand {
+    font-family: 'Alfa Slab One', cursive;
+    letter-spacing: 1.5;
 }
