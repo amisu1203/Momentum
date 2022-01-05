@@ -26,26 +26,27 @@ img {
 }
 
 .bag .tit-bag {
-    font-size: 4.5rem;
+    font-size: 4.4rem;
     margin-bottom: 20px;
-    color: #f2f2f2;
     letter-spacing: .1em;
-    text-shadow: 0 -1px 0 rgb(193, 193, 193), 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 22px 30px rgba(0, 0, 0, 0.9), 2px 2px 2px rgba(206, 89, 55, 0);
+    color: #fffff5e0;
+    text-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5, -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5, -4px 5px #808d93, -5px 4px #cdd2d5, -5px 6px #808d93, -6px 5px #cdd2d5, -6px 7px #808d93, -7px 6px #cdd2d5, -7px 8px #808d93, -8px 7px #cdd2d5;
 }
 
 .bag #todo-form input {
     outline: none;
     border-radius: 40px;
     border: none;
-    opacity: 80%;
+    opacity: .8;
     padding: 5px;
     text-align: center;
     box-sizing: border-box;
     font-size: 1.6rem;
     font-weight: 700;
     margin-bottom: 30px;
-    background: rgb(213, 213, 213);
+    background: rgb(255, 255, 255);
     transition: .4s;
+    cursor: pointer;
 }
 
 .bag #todo-form input:hover {
@@ -53,30 +54,34 @@ img {
     transform: scale(1.2);
 }
 
+.bag #todo-form input::placeholder {
+    color: #4d4d4dfe;
+}
+
 .bag #todo-list {
+    margin: 0 auto;
+    width: 400px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 0 auto;
+    justify-content: center;
+    align-items: space-between;
     font-family: 'Gowun Batang', serif;
     font-weight: 700;
     font-size: 2.2rem;
-    width: 350px;
     height: 250px;
     padding: 10px 0;
     border-radius: 40px;
-    background: rgba(175, 167, 159, 0.352);
-}
-
-.bag #todo-list li {
-    /* margin: 0 auto 10px; */
+    text-shadow: #e0e0e0 2px 2px 0;
 }
 
 .bag #todo-list button {
     border: none;
     background: none;
-    vertical-align: middle;
-    font-size: 2.8rem;
+    padding: 0 0 0 3px;
+    line-height: 2.5rem;
+    font-size: 2.5rem;
+    color: rgb(99, 99, 99);
 }
 
 /* 시계 */
@@ -108,7 +113,7 @@ img {
 
 @media screen and (max-width: 429px) {
     .bag {
-        padding: 80px 30px 100px;
+        padding: 100px 30px 120px;
         background-size: 420px;
     }
 
@@ -117,28 +122,26 @@ img {
     }
 
     /* 투두 리스트 */
-    .bag #todo-form input:hover {
+    .bag #todo-form input {
         opacity: .8;
+        padding: 5px 0;
+        font-size: 1.4rem;
+    }
+
+    .bag #todo-form input:hover {
         transform: scale(1);
     }
 
     .bag #todo-list {
-        font-weight: 700;
         font-size: 2rem;
-        width: 200px;
+        width: 70%;
         height: 140px;
-        background: rgba(175, 167, 159, 0.352);
+        text-shadow: #e0e0e0 1px 1px 0;
     }
 
     /* 시계 */
     #clock {
         display: none;
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        font-size: 2rem;
-        color: #b7b7b7;
-        text-shadow: #e0e0e0 1px 1px 0;
     }
 
     /* 광고 */
