@@ -16,8 +16,9 @@ function onLoginSubmit(event) {
 }
 
 function paintGreeting(username) {
-    greeting.innerText = `hello ${username}`;
-    user.innerText = `${username}`;
+    const userNameUpper = username.toUpperCase();
+    greeting.innerText = `hello ${userNameUpper}`;
+    user.innerText = `${userNameUpper}`;
 }
 
 const savedUsername = localStorage.getItem(USERNAME_KEY);
