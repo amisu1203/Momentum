@@ -25,6 +25,9 @@ const savedUsername = localStorage.getItem(USERNAME_KEY);
 
 if(savedUsername === null) {
     // show the form
+    if (window.location.pathname === '/main.html') {
+        location.href = 'index.html';
+    }
     loginForm.addEventListener('submit', onLoginSubmit);
 } else {
     // show the greeting
